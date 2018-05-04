@@ -3,7 +3,8 @@ This repository contains simple examples of how to use the apirone.com receive p
 
 Further documentation & explanation can be found at: https://apirone.com/docs/bitcoin-forwarding-api
 
-Show an invoice to the User with a javascript payment button, on payment received redirects to a status page. When the payment is fully confirmed shows the user nutsandbolts.jpg i.e. the product.
+Show an invoice to the User with a javascript payment button. When payment received, page redirects to a status page.
+When the payment is fully confirmed shows the user nutsandbolts.jpg i.e. the product.
 
 This code is intended as educational reference material and is not written for production use.
 
