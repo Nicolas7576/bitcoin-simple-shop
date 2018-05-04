@@ -3,7 +3,7 @@
 include 'include.php';
 
 $invoice_id = 9001;
-$price_in_usd = 0.15;
+$price_in_usd = 15;
 $product_url = 'nutbolt.jpg';
 $price_in_btc = file_get_contents($blockchain_root . "tobtc?currency=USD&value=" . $price_in_usd);
 
@@ -25,7 +25,7 @@ if (!$result) {
 <html>
 <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script type="text/javascript" src="<? echo $blockchain_root ?>Resources/wallet/pay-now-button-v2.js"></script>
+    <script type="text/javascript" src="pay-now-button-v2.js"></script>
     
     <script type="text/javascript">
 	$(document).ready(function() {
@@ -43,7 +43,7 @@ if (!$result) {
                 <img src="pay_now_64.png">
             </div>
             <div class="blockchain stage-loading" style="text-align:center">
-                <img src="<?php echo $blockchain_root ?>Resources/loading-large.gif">
+                <img src="loading-large.gif">
             </div>
             <div class="blockchain stage-ready" style="text-align:center">
                 Please send <?php echo $price_in_btc; ?> BTC to <br /> <b>[[address]]</b> <br />

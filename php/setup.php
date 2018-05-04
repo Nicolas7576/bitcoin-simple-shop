@@ -36,4 +36,6 @@ if (!$result) {
     die(__LINE__ . ' Invalid query: ' . mysql_error());
 }
 
+echo "done";
+
 ?>
