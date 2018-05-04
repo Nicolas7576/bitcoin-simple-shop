@@ -1,4 +1,4 @@
-# Notes
+# Bitcoin Simple Shop (V1 forwaring)
 This repository contains simple examples of how to use the apirone.com receive payments API to process bitcoin payments.
 
 Further documentation & explanation can be found at: https://apirone.com/docs/bitcoin-forwarding-api
@@ -6,3 +6,13 @@ Further documentation & explanation can be found at: https://apirone.com/docs/bi
 Show an invoice to the User with a javascript payment button, on payment received redirects to a status page. When the payment is fully confirmed shows the user nutsandbolts.jpg i.e. the product.
 
 This code is intended as educational reference material and is not written for production use.
+
+# Instructions
+    * Clone the git repository into the ROOT of your web server.
+    * cd /www/receive_payment_php_demo
+    * chmod 755 ./
+    * Change URL address, bitcoin wallet and database settings at setup.php
+    * Navigate to setup.php in your browser
+    * http://your_site/receive_payment_php_demo/setup.php
+    * Now the database is initialized open the demo
+    * http://your_site/receive_payment_php_demo/index.php
